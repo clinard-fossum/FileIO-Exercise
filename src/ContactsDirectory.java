@@ -13,7 +13,7 @@ public class ContactsDirectory {
     public static void main(String[] args) {
         String dataDirectory = "data";
         Scanner sc = new Scanner(System.in);
-
+        String topBar = "\n Name | Phone Number\n " + "-------------------\n ";
 
 
         Path folder = Paths.get(dataDirectory);
@@ -41,8 +41,8 @@ public class ContactsDirectory {
 
     switch (contactOptions) {
             case 1:
-                System.out.println("\n Name | Phone Number\n " + "-------------------\n ");                for (int i = 0; i < contactList.size(); i++) {
-                    String contact = contactList.get(i);
+                System.out.println(topBar);
+                for (String contact : contactList) {
                     System.out.println(contact + "\n");
                 }
                 break;
@@ -70,7 +70,7 @@ public class ContactsDirectory {
                     List<String> namesFromFile = Files.readAllLines(file);
                     for (String contact : namesFromFile) {
                         if (contact.equalsIgnoreCase(searchContact)) {
-                            System.out.println("\n Name | Phone Number\n " + "-------------------\n ");
+                            System.out.println(topBar);
                             System.out.println(contact);
                         }
                     }
