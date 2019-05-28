@@ -39,33 +39,30 @@ public class ContactsDirectory {
         int contactOptions;
         contactOptions = sc.nextInt();
 
-        System.out.println("\n Name | Phone Number\n " + "-------------------\n ");
-
-
     switch (contactOptions) {
             case 1:
-//                System.out.println("View contacts");
-                for (int i = 0; i < contactList.size(); i++) {
+                System.out.println("\n Name | Phone Number\n " + "-------------------\n ");                for (int i = 0; i < contactList.size(); i++) {
                     String contact = contactList.get(i);
                     System.out.println(contact + "\n");
                 }
                 break;
 
             case 2:
-                System.out.println("Add a new contact");
                 System.out.println("Please enter name and number of desired contact");
                 String newContact;
                 newContact = sc.nextLine();
-//                List<String> updatedContacts = new ArrayList<>();
-                Files.write(
-                        Paths.get("data", "contactExercise.txt"),
-                        Arrays.listOf(newContact),
-                        StandardOpenOption.APPEND,
-                        System.out.println("Your contact was added"));
+                try {
+                    Files.write(
+                            file,
+                            Arrays.asList(newContact),
+                            StandardOpenOption.APPEND);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Your contact was added");
                 break;
 
             case 3:
-                System.out.println("Search a contact by name");
                 System.out.println("Please enter name and number of contact you're searching for\n");
                 String searchContact;
                 searchContact = sc.nextLine();
@@ -73,7 +70,8 @@ public class ContactsDirectory {
                     List<String> namesFromFile = Files.readAllLines(file);
                     for (String contact : namesFromFile) {
                         if (contact.equalsIgnoreCase(searchContact)) {
-                            System.out.println(contactList.get(searchContact));
+                            System.out.println("\n Name | Phone Number\n " + "-------------------\n ");
+                            System.out.println(contact);
                         }
                     }
 
@@ -83,7 +81,6 @@ public class ContactsDirectory {
                 break;
 
             case 4:
-                System.out.println("Delete an existing contact");
                 System.out.println("Which contact do you wish to delete?");
                 String deleteContact;
                 deleteContact = sc.nextLine();
