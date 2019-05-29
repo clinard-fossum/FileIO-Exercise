@@ -73,36 +73,6 @@ public class ContactsDirectory {
                     String searchContact;
                     searchContact = sc.nextLine();
 
-
-//                    List<String> updatedList = new ArrayList<>();
-//
-//                    try {
-//                        List<String> namesFromFile = Files.readAllLines(file);
-//                        for (String line : namesFromFile) {
-//                            String name = searchContact;
-//                            if (name.equalsIgnoreCase("fer")) {
-//                                System.out.println("That's me");
-//                            }
-//                            name = line.split(" ")[0];
-//                            int age = Integer.parseInt(line.split(" | ")[1]);
-//
-//                            System.out.println("name = " + name);
-//                            System.out.println("age = " + age);
-//
-//                            if (name.equalsIgnoreCase("ryan")) {
-//                                updatedList.add(name + " " + 35);
-//                                continue;
-//                            }
-//                            updatedList.add(line);
-//                        }
-//
-//                        Files.write(file, updatedList);
-//
-//                    } catch (IOException e) {
-//                        e.printStackTrace();
-//                    }
-
-
                     try {
                         List<String> namesFromFile = Files.readAllLines(file);
                         for (String contact : namesFromFile) {
@@ -119,30 +89,26 @@ public class ContactsDirectory {
                     break;
 
                 case 4:
-                    System.out.println("Which contact do you wish to delete?");
-                    String deleteContact;
-                    deleteContact = sc.nextLine();
+                    System.out.println("Who would you like to remove?");
+                    String contact = sc.nextLine();
                     try {
-                        List<String> contactD = Files.readAllLines(file);
-                        for (String contact : contactD) {
-                            if (contact.equalsIgnoreCase(deleteContact)) {
-                                contactD.add("");
-                                continue;
+                        List<String> lines = Files.readAllLines(file);
+                        List<String> updatedList = new ArrayList<>();
+                        for (String line : lines) {
+                            if (!line.contains(contact)) {
+                                updatedList.add(line);
                             }
-                            contactD.add(contact);
                         }
-
-                        Files.write(Paths.get("data", "groceries.txt"), contactD);
-
-                                System.out.println("Contact deleted successfully");
-
-
-                        break;
+                        if (!updatedList.contains(contact)) {
+                            System.out.println("\nContact " + contact + " deleted\n");
+                        }
+                        Files.write(Paths.get(String.valueOf(file)), updatedList);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     System.out.println(AskAbout);
                     break;
+
 
                 case 5:
                     System.out.println("Goodbye!");
