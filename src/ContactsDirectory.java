@@ -22,10 +22,16 @@ public class ContactsDirectory {
         Path folder = Paths.get(dataDirectory);
         Path file = Paths.get(dataDirectory, "contactExercise.txt");
 
-
-        List<String> contactList = Arrays.asList("Jane | 2102341234", "Logan | 2345436789", "Sarah | 2802349876",
-                "Rhianna | 2654597654", "Alexandra | 2105567854");
         Path filepath = Paths.get(String.valueOf(file));
+        List<String> contactList = null;
+        try {
+            contactList = Files.readAllLines(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        List<String> updatedList = new ArrayList<>();
+
+
         try {
             Files.write(filepath, contactList);
         } catch (IOException e) {
@@ -44,8 +50,13 @@ public class ContactsDirectory {
             switch (contactOptions) {
                 case 1:
                     System.out.println(topBar);
-                    for (String contact : contactList) {
-                        System.out.println(contact + "\n");
+                    try {
+                        List<String> yourContactList = Files.readAllLines(file);
+                        for (String contact : yourContactList) {
+                            System.out.println(contact + "\n");
+                        }
+                    }catch (IOException e) {
+                        e.printStackTrace();
                     }
                     System.out.println(AskAbout);
                     break;
@@ -76,7 +87,7 @@ public class ContactsDirectory {
                     try {
                         List<String> namesFromFile = Files.readAllLines(file);
                         for (String contact : namesFromFile) {
-                            if (contact.equalsIgnoreCase(searchContact)) {
+                            if (contact.contains(searchContact)) {
                                 System.out.println(topBar);
                                 System.out.println(contact);
                             }
@@ -93,7 +104,7 @@ public class ContactsDirectory {
                     String contact = sc.nextLine();
                     try {
                         List<String> lines = Files.readAllLines(file);
-                        List<String> updatedList = new ArrayList<>();
+//                        List<String> updatedList = new ArrayList<>();
                         for (String line : lines) {
                             if (!line.contains(contact)) {
                                 updatedList.add(line);

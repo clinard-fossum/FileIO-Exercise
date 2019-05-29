@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3972feb6-e35d-46c3-8738-5e72ec3810f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/contactExercise.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/contactExercise.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ContactsDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactsDirectory.java" afterDir="false" />
     </list>
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ContactsDirectory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="127" column="69" lean-forward="true" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
+            <state relative-caret-position="164">
+              <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,6 +63,7 @@
         <option value="$PROJECT_DIR$/src/.gitignore" />
         <option value="$PROJECT_DIR$/src/Input.java" />
         <option value="$PROJECT_DIR$/data/contactExercise.txt" />
+        <option value="$PROJECT_DIR$/src/test.java" />
         <option value="$PROJECT_DIR$/src/ContactsDirectory.java" />
       </list>
     </option>
@@ -133,9 +133,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ContactsDirectory">
     <configuration name="ContactsDirectory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ContactsDirectory" />
+      <module name="FileIO-Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Marker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Marker" />
+      <module name="FileIO-Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
       <module name="FileIO-Exercise" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,6 +158,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ContactsDirectory" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Marker" />
       </list>
     </recent_temporary>
   </component>
@@ -163,13 +179,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14800000" />
+    <option name="totallyTimeSpent" value="20246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="23" width="1251" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12924607" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12924607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -179,8 +195,8 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49958575" weight="0.39545456" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.6287879" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49958575" visible="true" weight="0.36363637" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6287879" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -225,6 +241,16 @@
         <state relative-caret-position="-235" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/contactExercise.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -234,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ContactsDirectory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="127" column="69" lean-forward="true" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
+        <state relative-caret-position="164">
+          <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
