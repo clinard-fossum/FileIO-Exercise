@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3972feb6-e35d-46c3-8738-5e72ec3810f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/contactExercise.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/contactExercise.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ContactsDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactsDirectory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +29,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ContactsDirectory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
+            <state relative-caret-position="229">
               <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="628" />
     <option name="y" value="23" />
     <option name="width" value="652" />
@@ -120,7 +119,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559242164338" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559252375058" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -188,15 +187,15 @@
       <workItem from="1559069218139" duration="596000" />
       <workItem from="1559070180514" duration="322000" />
       <workItem from="1559225153364" duration="7000" />
-      <workItem from="1559241835670" duration="712000" />
+      <workItem from="1559241835670" duration="3172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23821000" />
+    <option name="totallyTimeSpent" value="26281000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="628" y="23" width="652" height="777" extended-state="1" />
+    <frame x="628" y="23" width="652" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.13606557" />
@@ -217,7 +216,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49958575" weight="0.3318182" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49958575" weight="0.33138686" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50041425" side_tool="true" weight="0.22424242" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3287879" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -261,7 +260,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ContactsDirectory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="229">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
