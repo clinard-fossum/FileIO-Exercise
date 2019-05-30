@@ -8,15 +8,19 @@ import java.util.*;
 public class ContactsDirectory {
 
     public static void main(String[] args) {
+
         String dataDirectory = "data";
         Scanner sc = new Scanner(System.in);
         String topBar = "\n Name | Phone Number\n " + "-------------------\n ";
-        String AskAbout = "1. View contacts.\n" +
-                "2. Add a new contact.\n" +
-                "3. Search a contact by name.\n" +
-                "4. Delete an existing contact.\n" +
-                "5. Exit.\n" +
-                "Enter an option (1, 2, 3, 4 or 5):";
+        String AskAbout =
+                "+-----------------------------------+\n" +
+                        "| 1. View contacts.\n" +
+                        "| 2. Add a new contact.\n" +
+                        "| 3. Search a contact by name.\n" +
+                        "| 4. Delete an existing contact.\n" +
+                        "| 5. Exit.\n" +
+                        "| Enter an option (1, 2, 3, 4 or 5):\n" +
+                        "+------------------------------------+\n";
 
 
         Path folder = Paths.get(dataDirectory);
@@ -40,7 +44,7 @@ public class ContactsDirectory {
 
         int contactOptions = 0;
 
-        System.out.println(AskAbout);
+        System.err.println(AskAbout);
 
         while (contactOptions < 5) {
 
@@ -55,10 +59,10 @@ public class ContactsDirectory {
                         for (String contact : yourContactList) {
                             System.out.println(contact + "\n");
                         }
-                    }catch (IOException e) {
+                    } catch (IOException e) {
                         e.printStackTrace();
                     }
-                    System.out.println(AskAbout);
+                    System.err.println(AskAbout);
                     break;
 
 
@@ -76,7 +80,7 @@ public class ContactsDirectory {
                         e.printStackTrace();
                     }
                     System.out.println("Your contact was added");
-                    System.out.println(AskAbout);
+                    System.err.println(AskAbout);
                     break;
 
                 case 3:
@@ -117,7 +121,7 @@ public class ContactsDirectory {
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                    System.out.println(AskAbout);
+                    System.err.println(AskAbout);
                     break;
 
 
